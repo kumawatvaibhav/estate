@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 215 100% 50%; /* #0078ff 99acres primary blue */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 142 71% 45%; /* #1dbf73 99acres green */
+  --secondary-foreground: 0 0% 100%;
+  --accent: 0 100% 67%; /* #ff5a5f 99acres accent red */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 20 14.3% 4.1%;
+  --radius: 0.5rem;
+  
+  /* 99acres specific colors */
+  --99a-blue: 215 100% 50%; /* #0078ff */
+  --99a-dark-blue: 211 100% 26%; /* #004e85 */
+  --99a-green: 142 71% 45%; /* #1dbf73 */
+  --99a-light-blue: 193 100% 46%; /* #00aeff */
+  --99a-light-gray: 0 0% 96%; /* #f5f5f5 */
+  --99a-pink: 348 100% 61%; /* #f7385f */
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 350 81% 49%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 209 75% 32%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 187 60% 48%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+.property-slider::-webkit-scrollbar {
+  height: 4px;
+}
+
+.property-slider::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.property-slider::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
